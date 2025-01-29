@@ -4,4 +4,4 @@ Final projects for Data Science Lab: Process and methods exam at Politecnico di 
 
 You can find the final report in `report.pdf`. 
 
-For testing code you can simply pull this repo and run main.ipynb, avoiding cells for features extraction (features are already extracted in the various `development-*.csv` datasets)
+For testing code you can simply pull this repo and run main.ipynb, avoiding cells for features extraction (features are already extracted in the various `development-*.csv` datasets) and model fine-tuning (fine tuned model is already defined in the cell above grid search).
