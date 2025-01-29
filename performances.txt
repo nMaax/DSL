@@ -1,0 +1,19 @@
+Sub     Date        Hour        local_RMSE      competition_RSE         Model       Notes
+ 5      11          18:51       10.08           10.008                  OLR         PRECOMP + MFCC(mu)
+10      14          21:14       10.00           9.707                   OLR         PRECOMP + LOGSPEC(mu, std) + MFCC(mu, std) + RMS(mu)
+11      15          18:33       9.99            9.955                   OLR         PRECOMP + LOGSPEC(mu, std) + MFCC(mu, std) + RMS(mu) + SILENCE_FRAMES
+12      15          21:50       9.92            9.984                   OLR         PRECOMP + LOGSPEC(mu, std) + MFCC(mu, std) + mu_MFCC + std_MFCC + RMS(mu) + SILENCE_FRAMES + mu_SILENCE_FRAMES + std_SILENCE_FRAMES
+19      17          14:28       9.92            9.981                   OLR         PRECOMP + LOGSPEC(mu, std) + MFCC(mu, std) + mu_MFCC + std_MFCC + median_MFCC + RMS(mu) + SILENCE_FRAMES + mu_SILENCE_FRAMES + std_SILENCE_FRAMES + median_SILENCE_FRAMES
+20      17          20:12       9.89            9.986                   OLR         PRECOMP + LOGSPEC(mu, std) + MFCC(mu, std) + mu_MFCC + std_MFCC + median_MFCC + RMS(mu) + SILENCE_FRAMES + mu_SILENCE_FRAMES + std_SILENCE_FRAMES + median_SILENCE_FRAMES + PITCH_FEATURES (***HEAVY IN COMPUTATION***)
+26      19          11:37       3.694           9.975                   RFR         PRECOMP + LOGSPEC(mu, std) + MFCC(mu, std) + mu_MFCC + std_MFCC + SILENCE_FRAMES + mu_SILENCE_FRAMES + std_SILENCE_FRAMES     
+42      27          14:34       9.00            9.752                   XGB         pre_computed_features + comb_pre_comp_features + mfcc_features(mean, std per coff)
+44      27          15:02       8.84            10.178                  XGB         pre_computed_features + comb_pre_comp_features + mfcc_features(mean, std per coff) + log_melspec_features(mean, std per piece)
+50      27          20:33       8.76            10.136                  XGB         pre_computed_features + comb_pre_comp_features + mfcc_features(mean, std per coff) + log_melspec_features(mean, std per piece) + overall_silence_contour
+51      27          21:55       8.49            10.341                  XGB         pre_computed_features + comb_pre_comp_features + mfcc_features(mean, std per coff) + log_melspec_features(mean, std per piece) + overall_silence_contour
+
+FINAL (no seed overfitting)
+56      28          20:09       9.10            10.283                  XGB         pre_computed_features + comb_pre_comp_features + mfcc_features(mean, std per coff) + log_melspec_features(mean, std per piece) + overall_silence_contour
+
+---
+
+> ***NOTE***: If you deliver 2 submissions, you will have to describe both in the report!

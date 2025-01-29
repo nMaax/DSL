@@ -1,0 +1,51 @@
+GridSearchCV Results for OrdinaryLinearRegressor:
+Best Parameters: {}
+Best Score (RMSE): 10.0445
+Top 5 Configurations:
+params  mean_test_score
+    {}        -10.04446
+
+GridSearchCV Results for Lasso:
+Best Parameters: {'alpha': 0.01, 'max_iter': 50000}
+Best Score (RMSE): 10.0860
+Top 5 Configurations:
+                            params  mean_test_score
+{'alpha': 1000, 'max_iter': 50000}       -12.473376
+ {'alpha': 100, 'max_iter': 50000}       -11.405602
+  {'alpha': 10, 'max_iter': 50000}       -10.892273
+   {'alpha': 1, 'max_iter': 50000}       -10.426063
+ {'alpha': 0.1, 'max_iter': 50000}       -10.089280
+
+GridSearchCV Results for Ridge:
+Best Parameters: {'alpha': 0.01, 'max_iter': 50000}
+Best Score (RMSE): 10.0414
+Top 5 Configurations:
+                            params  mean_test_score
+{'alpha': 1000, 'max_iter': 50000}       -10.209233
+  {'alpha': 10, 'max_iter': 50000}       -10.105126
+   {'alpha': 1, 'max_iter': 50000}       -10.091062
+ {'alpha': 100, 'max_iter': 50000}       -10.086193
+ {'alpha': 0.1, 'max_iter': 50000}       -10.066684
+
+GridSearchCV Results for RandomForest:
+Best Parameters: {'criterion': 'poisson', 'max_depth': 10, 'n_estimators': 150}
+Best Score (RMSE): 10.0789
+Top 5 Configurations:
+                                                       params  mean_test_score
+{'criterion': 'poisson', 'max_depth': 3, 'n_estimators': 150}       -10.663927
+ {'criterion': 'poisson', 'max_depth': 3, 'n_estimators': 50}       -10.661418
+{'criterion': 'poisson', 'max_depth': 3, 'n_estimators': 100}       -10.660502
+{'criterion': 'poisson', 'max_depth': 5, 'n_estimators': 150}       -10.272172
+{'criterion': 'poisson', 'max_depth': 5, 'n_estimators': 100}       -10.270668
+
+GridSearchCV Results for MLPRegressor:
+Best Parameters: {'alpha': 0.0001, 'hidden_layer_sizes': (50,)}
+Best Score (RMSE): 11.5978
+Top 5 Configurations:
+                                           params  mean_test_score
+    {'alpha': 0.01, 'hidden_layer_sizes': (100,)}       -12.509090
+     {'alpha': 0.01, 'hidden_layer_sizes': (50,)}       -12.428233
+  {'alpha': 0.0001, 'hidden_layer_sizes': (100,)}       -12.414663
+{'alpha': 0.0001, 'hidden_layer_sizes': (50, 50)}       -12.215639
+   {'alpha': 0.001, 'hidden_layer_sizes': (100,)}       -12.103610
+

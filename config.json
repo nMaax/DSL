@@ -1,0 +1,7 @@
+{
+    "sampling_rate" : 22050,
+    "n_mfcc" : 20,
+    "n_mels" : 20,
+    "num_silence_frames" : 20
+  }
+  
